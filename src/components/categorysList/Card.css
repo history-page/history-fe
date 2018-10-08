@@ -1,0 +1,87 @@
+@value globalCss: "../../global.css";
+@value dark-1, gray-1 from globalCss;
+
+.storyCardCover {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 2px;
+}
+.cardDescription {
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 50px;
+  color: gray-1;
+}
+.authorAvatar {
+  text-align: center;
+  width: 50px;
+}
+.authorName {
+  display: block;
+  font-size: 80%;
+  letter-spacing: 0.5px;
+}
+.detailWrapper .authorNameInContent {
+  display: none;
+  font-size: 81%;
+  line-height: 1.2;
+}
+
+@media (min-width: 576px) {
+  .storyCardCover {
+    margin: 2px;
+  }
+  .authorAvatar {
+    display: none;
+  }
+  .detailWrapper .authorNameInContent {
+    display: inline-block;
+  }
+}
+
+.storyCardWrapper {
+}
+
+.storyCardCoverOverlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.1), rgb(0, 0, 0, 0.6));
+}
+
+.cardSkeleton {
+  position: relative;
+}
+
+.cardMeta  {
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  color: white;
+  bottom: 0px;
+}
+
+.detailWrapper{
+  color: #bdbdbd;
+  display: flex;
+  justify-content: space-between;
+}
+.detailWrapper .createdTime {
+  padding-bottom: 2px;
+  font-size: 68%;
+  letter-spacing: 0.5px;
+}
+
+.cartTitle {
+  color: dark-1;
+}
+.cardBottomContent{
+  margin-top: 5px;
+}
+
+.description{
+}

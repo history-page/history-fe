@@ -1,0 +1,20 @@
+.footerWrapper {
+  margin-top: 10px;
+  background: black;
+  border-top: 1px double white;
+  outline: 2px solid rgb(0, 151, 254);
+  display: flex;
+}
+.footerWrapper div{
+  color: white;
+}
+.icon{
+  padding: 0 3px;
+  font-size: 30px;
+  color: white;
+}
+
+.iconWrapper{
+  margin-left: auto;
+  min-width: 120px;
+}

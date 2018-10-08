@@ -1,0 +1,8 @@
+.breadcrumbWrapper {
+  position: relative;
+  padding-bottom: 5px;
+  margin: 10px 8px 8px;
+  font-weight: 300;
+  font-size: 18.5px;
+  border-bottom: 1px solid #aaacb0;
+}

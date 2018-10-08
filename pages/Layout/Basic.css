@@ -1,0 +1,48 @@
+.layoutContentWrapper {
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+}
+
+div.grey {
+  background-color: white; 
+}
+
+.headerWrapper {
+  background: #202226;
+}
+
+.header {
+  background: black;
+  height: 80px;
+  padding: 14px 8px;
+}
+
+.header img{
+  height: 100%;
+  margin-left: 80px;
+}
+
+@media screen  and (min-width: 1601px)  {
+  .layoutContentWrapper {
+    width: 960px;
+  }
+}
+
+@media screen  and (min-width: 1201px) and (max-width: 1600px) {
+  .layoutContentWrapper {
+    width: 960px;
+  }
+}
+
+@media screen  and (min-width: 992px) and (max-width: 1200px) {
+  .layoutContentWrapper {
+    width: 960px;
+  }
+}
+
+@media screen  and (min-width: 768px) and (max-width: 991px) {
+  .layoutContentWrapper {
+    width: 768px;
+  }
+}

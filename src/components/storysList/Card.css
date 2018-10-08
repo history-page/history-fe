@@ -1,0 +1,71 @@
+.storyCardCover {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 2px;
+}
+
+@media (min-width: 576px) {
+  .storyCardCover {
+    margin: 2px;
+  }
+
+  .cardBottomContent.isShowDetail{
+    display: none;
+  }
+
+  .cardMeta{
+    bottom: 20px;
+  }
+}
+
+.storyCardWrapper {
+}
+
+.storyCardCoverOverlay {
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(0, 0, 0, 1));
+}
+
+.cardSkeleton {
+  position: relative;
+}
+
+.cardMeta  {
+  padding: 15px;
+  width: 100%;
+  position: absolute;
+  color: white;
+  bottom: 10px;
+}
+
+.createdTime {
+  float: right;
+  font-size: 68%;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+
+.cardTitleContent b{
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+.cardTitleContent {
+  margin-bottom: 10px;
+  padding-left: 6px;
+}
+.cardSubTitleContent{
+  font-size: 81%;
+  line-height: 1.2;
+  text-align: right;
+}
+.cardBottomContent{
+  margin-top: 5px;
+}
+.clockIcon{
+  margin-right: 5px;
+}

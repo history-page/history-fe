@@ -1,0 +1,9 @@
+.layoutContentWrapper {
+  min-height: 100vh;
+}
+
+.storyWrapper {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}

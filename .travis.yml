@@ -1,0 +1,33 @@
+language: node_js
+node_js:
+  - '8'
+before_install:
+  # This fixes a problem with apt-get failing later, see http://docs.travis-ci.com/user/installing-dependencies/#Installing-Ubuntu-packages
+  - sudo apt-get update -qq
+  # We install all dependencies for node-opencv using apt-get
+  - sudo apt-get install libcv-dev
+  - sudo apt-get install libopencv-dev
+  - sudo apt-get install libhighgui-dev
+  # Get commit message to check if we should publish binary
+  - COMMIT_MESSAGE=$(git show -s --format=%B $TRAVIS_COMMIT | tr -d '\n')
+  # Put local npm modules .bin on PATH
+  - export PATH=./node_modules/.bin/:$PATH
+  # Install node-gyp and node-pre-gyp so it is available for packaging and publishing
+  - npm install node-gyp -g
+  - npm install node-pre-gyp
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github_token: $github_token
+  target-branch: gh-pages
+  local_dir: build
+  on:
+    branch: master
+    tags: true
